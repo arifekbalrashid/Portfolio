@@ -1,0 +1,55 @@
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS projects (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    image_url VARCHAR(255),
+    tech_stack JSON,
+    github_link VARCHAR(255),
+    live_link VARCHAR(255),
+    display_order INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    is_read BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS profile (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    bio TEXT,
+    role VARCHAR(255),
+    resume_url VARCHAR(255),
+    github_link VARCHAR(255),
+    linkedin_link VARCHAR(255),
+    twitter_link VARCHAR(255),
+    email VARCHAR(255),
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS skills (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    icon_class VARCHAR(50),
+    level INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS visits (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ip_address VARCHAR(45), -- IPv6 support
+    user_agent TEXT,
+    visited_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

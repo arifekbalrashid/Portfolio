@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Md Arif Ekbal Rashid, an AI/ML Engineer specializing in scalable backend systems.">
+    <meta name="keywords" content="Md Arif Ekbal Rashid, AI/ML Engineer, C++, Python, React, Portfolio, Web Developer, Software Engineer">
+    <meta name="author" content="Md Arif Ekbal Rashid">
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <nav class="navbar">
+        <a href="#" class="logo">Arif<span class="accent">.</span>io</a>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Education</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#stats">Stats</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact" class="btn-primary">Connect</a>
+            
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+
+            <div class="profile-image">
+                <img src="assets/images/test2.jpeg" alt="Md Arif Ekbal Rashid">
+            </div>
+
+            <span class="subtitle">Hello, I'm</span>
+            <h1 class="glitch-text" data-text="Md Arif Ekbal Rashid">Md Arif Ekbal Rashid </h1>
+            <h2 class="role">Full Stack Developer</h2>
+            <p class="description">Building scalable, high-performance applications with modern Python & creative frontend experiences.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+                <a href="#" target="_blank" class="btn-secondary resume-btn" style="display: none; border-color: var(--accent-color); color: var(--accent-color);">Resume</a>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About <span class="accent">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                    I am a Computer Science undergraduate with a strong interest in Artificial Intelligence, Machine Learning, and scalable backend systems.
+                    </p>
+                    <p>
+                    I have experience in developing AI-powered applications and full-stack projects while continuously strengthening my problem-solving skills through Data Structures and Algorithms.
+                    </p>
+                    <p>
+                    I am particularly interested in building real-world AI systems and high-performance backend architectures that can scale and create meaningful impact.
+                    </p>
+                    <ul class="about-details">
+                        <li><i class="fas fa-code"></i>AI/ML Engineer</li>
+                        <li><i class="fas fa-layer-group"></i> Full Stack Development</li>
+                        <li><i class="fas fa-brain"></i> Data Structures & Algorithms</li>
+                    </ul>
+                </div>
+                <div class="about-visual">
+                    <div class="code-block">
+                        <pre><code>class Developer {
+  String name = "Md Arif Ekbal Rashid";
+  String[] stack = {
+    "Python", "PyTorch",
+    "FastAPI", "SQL", "LangChain", "LangGraph",
+    "Git", "MySQL", "C++"
+  };
+  
+  void build() {
+    while(alive) {
+      code();
+      learn();
+    }
+  }
+}
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="experience" class="section">
+        <div class="container timeline-container">
+            <h2 class="section-title">My <span class="accent">Journey</span></h2>
+            <div class="timeline">
+                <div class="timeline-item left visible">
+                    <div class="timeline-content">
+                        <span class="date">2023 - Present</span>
+                        <h4>B.Tech in CSE</h4>
+                        <p>Lovely Professional University, Phagwara, Punjab</p>
+                        <p>Current CGPA: <span class="accent">8.38</span></p>
+                    </div>
+                </div>
+                <div class="timeline-item right visible">
+                    <div class="timeline-content">
+                        <span class="date">2022 - 2023</span>
+                        <h4>Senior Secondary Education</h4>
+                        <p>Bharat Mata Saraswati Bal Mandir, New Delhi</p>
+                        <p>Percentage: <span class="accent">74</span></p>
+                    </div>
+                </div>
+                <div class="timeline-item left visible">
+                    <div class="timeline-content">
+                        <span class="date">2020 - 2021</span>
+                        <h4>Secondary Education</h4>
+                        <p>B.S.F Senior Secondary Residential School, Kadamtala, West Bengal</p>
+                        <p>Percentage: <span class="accent">94.8</span></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+            <div id="projects-container" class="projects-grid">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">My <span class="accent">Achievements</span></h2>
+
+            <div class="achievements-grid">
+
+                <div class="achievement-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Amazon ML Challenge 2025</h3>
+                    <p>Ranked in the <span class="accent">Top 1000</span> teams among 80000+ participating teams.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <i class="fas fa-code"></i>
+                    <h3>DSA</h3>
+                    <p>Solved over <span class="accent">600 problems</span>  on LeetCode and GeeksforGeeks.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>TryHackMe</h3>
+                    <p>Ranked among the <span class="accent">Top 2%</span> of global users on TryHackMe.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">My <span class="accent">Certifications</span></h2>
+
+            <div class="certifications-grid">
+
+                <div class="cert-card">
+                    <img src="assets/images/nptel.jpeg" alt="Cryptography and Network Security Certificate">
+                    <h3>Cryptography and Network Security</h3>
+                    <p>NPTEL</p>
+                    <a href="https://drive.google.com/file/d/1H3GtvzhSXvWEg5v7241iUgElDv5A_kjw/view?usp=drive_link" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <img src="assets/images/google_coursera.png" alt="Networking Certificate">
+                    <h3>The Bits and Bytes of Computer Networking</h3>
+                    <p>Google</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/OFYBU4BCGNVD" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <img src="assets/images/ibm_coursera.png" alt="OS Certificate">
+                    <h3>Introduction to Hardware and Operating Systems</h3>
+                    <p>Coursera</p>
+                    <a href="https://coursera.org/share/e52d413c92ee61c8f6245b1b902031e5" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Stats Section -->
+    <section id="stats" class="section">
+        <div class="container">
+            <h2 class="section-title">Coding <span class="accent">Stats</span></h2>
+            <div class="stats-grid">
+                <!-- <div class="stat-card" id="github-card">
+                    <span style="color: var(--text-secondary);">Loading...</span>
+                </div> -->
+                <div class="stat-card" id="leetcode-card">
+                    <span style="color: var(--text-secondary);">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title"><span class="accent">Skills</span></h2>
+
+        <!-- Technical Skills -->
+        <h3 class="skills-subtitle">Technical Skills</h3>
+        <div class="skills-grid">
+
+            <div class="skill-category">
+                <h4>Backend</h4>
+                <div class="skill-tags">
+                    <span>Java</span>
+                    <span>REST APIs</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Frontend</h4>
+                <div class="skill-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Tailwind</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Database & Tools</h4>
+                <div class="skill-tags">
+                    <span>MySQL</span>
+                    <span>MongoDB</span>
+                    <span>Git/GitHub</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Concepts</h4>
+                <div class="skill-tags">
+                    <span>DSA</span>
+                    <span>OOPS</span>
+                    <span>Algorithms</span>
+                    <span>Operating Systems</span>
+                    <span>Computer Networks</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Soft Skills -->
+        <h3 class="skills-subtitle" style="margin-top:40px;">Soft Skills</h3>
+        <div class="skills-grid">
+
+            <div class="skill-category">
+                <div class="skill-tags">
+                    <span>Problem Solving</span>
+                    <span>Critical Thinking</span>
+                    <span>Team Collaboration</span>
+                    <span>Adaptability</span>
+                    <span>Time Management</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>arifekbalrashid786@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <p><a href="https://linkedin.com/in/mdarifekbalrashid" target="_blank">linkedin.com/in/mdarifekbalrashid</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <p><a href="https://github.com/arifekbalrashid" target="_blank">github.com/arifekbalrashid</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91-9382441703</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                    <p id="form-status" style="margin-top: 1rem; color: var(--accent-color); font-size: 0.9rem;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Md Arif Ekbal Rashid. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/arifekbalrashid" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mdarifekbalrashid/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:arifekbalrashid786@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+91-9382441703"><i class="fas fa-phone"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/stats.js"></script>
+</body>
+</html>
