@@ -23,11 +23,13 @@
 
         <div class="nav-links">
             <a href="#about">About</a>
-            <a href="#experience">Education</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#stats">Stats</a>
             <a href="#skills">Skills</a>
+            <!-- <a href="#projects">Projects</a> -->
+            <a href="#certifications">Certifications</a>
+            <a href="#achievements">Achievements</a>
+            <!-- <a href="#experience">Education</a> -->
+            <a href="#stats">Stats</a>
+
             <a href="#contact" class="btn-primary">Connect</a>
             
         </div>
@@ -61,6 +63,7 @@
         </div>
     </header>
 
+    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About <span class="accent">Me</span></h2>
@@ -104,7 +107,143 @@
             </div>
         </div>
     </section>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">Skills</span></h2>
 
+            <!-- Technical Skills -->
+            <h3 class="skills-subtitle">Technical Skills</h3>
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <h4>Backend</h4>
+                    <div class="skill-tags">
+                        <span>Java</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Frontend</h4>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Tailwind</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Database & Tools</h4>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>Git/GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Concepts</h4>
+                    <div class="skill-tags">
+                        <span>DSA</span>
+                        <span>OOPS</span>
+                        <span>Algorithms</span>
+                        <span>Operating Systems</span>
+                        <span>Computer Networks</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soft Skills -->
+            <h3 class="skills-subtitle" style="margin-top:40px;">Soft Skills</h3>
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <div class="skill-tags">
+                        <span>Problem Solving</span>
+                        <span>Critical Thinking</span>
+                        <span>Team Collaboration</span>
+                        <span>Adaptability</span>
+                        <span>Time Management</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+            <div id="projects-container" class="projects-grid">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">My <span class="accent">Certifications</span></h2>
+
+            <div class="certifications-grid">
+
+                <div class="cert-card">
+                    <img src="assets/images/nptel.jpeg" alt="Cryptography and Network Security Certificate">
+                    <h3>Cryptography and Network Security</h3>
+                    <p>NPTEL</p>
+                    <a href="https://drive.google.com/file/d/1H3GtvzhSXvWEg5v7241iUgElDv5A_kjw/view?usp=drive_link" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <img src="assets/images/google_coursera.png" alt="Networking Certificate">
+                    <h3>The Bits and Bytes of Computer Networking</h3>
+                    <p>Google</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/OFYBU4BCGNVD" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <img src="assets/images/ibm_coursera.png" alt="OS Certificate">
+                    <h3>Introduction to Hardware and Operating Systems</h3>
+                    <p>Coursera</p>
+                    <a href="https://coursera.org/share/e52d413c92ee61c8f6245b1b902031e5" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">My <span class="accent">Achievements</span></h2>
+
+            <div class="achievements-grid">
+
+                <div class="achievement-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Amazon ML Challenge 2025</h3>
+                    <p>Ranked in the <span class="accent">Top 1000</span> teams among 80000+ participating teams.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <i class="fas fa-code"></i>
+                    <h3>DSA</h3>
+                    <p>Solved over <span class="accent">600 problems</span>  on LeetCode and GeeksforGeeks.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>TryHackMe</h3>
+                    <p>Ranked among the <span class="accent">Top 2%</span> of global users on TryHackMe.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!-- Timeline Section -->
     <section id="experience" class="section">
         <div class="container timeline-container">
@@ -139,75 +278,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
-            <div id="projects-container" class="projects-grid">
-                <!-- Projects will be dynamically inserted here -->
-            </div>
-        </div>
-    </section>
-    <!-- Achievements Section -->
-    <section id="achievements" class="section">
-        <div class="container">
-            <h2 class="section-title">My <span class="accent">Achievements</span></h2>
-
-            <div class="achievements-grid">
-
-                <div class="achievement-card">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Amazon ML Challenge 2025</h3>
-                    <p>Ranked in the <span class="accent">Top 1000</span> teams among 80000+ participating teams.</p>
-                </div>
-
-                <div class="achievement-card">
-                    <i class="fas fa-code"></i>
-                    <h3>DSA</h3>
-                    <p>Solved over <span class="accent">600 problems</span>  on LeetCode and GeeksforGeeks.</p>
-                </div>
-
-                <div class="achievement-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>TryHackMe</h3>
-                    <p>Ranked among the <span class="accent">Top 2%</span> of global users on TryHackMe.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2 class="section-title">My <span class="accent">Certifications</span></h2>
-
-            <div class="certifications-grid">
-
-                <div class="cert-card">
-                    <img src="assets/images/nptel.jpeg" alt="Cryptography and Network Security Certificate">
-                    <h3>Cryptography and Network Security</h3>
-                    <p>NPTEL</p>
-                    <a href="https://drive.google.com/file/d/1H3GtvzhSXvWEg5v7241iUgElDv5A_kjw/view?usp=drive_link" target="_blank" class="cert-btn">View Certificate</a>
-                </div>
-
-                <div class="cert-card">
-                    <img src="assets/images/google_coursera.png" alt="Networking Certificate">
-                    <h3>The Bits and Bytes of Computer Networking</h3>
-                    <p>Google</p>
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/OFYBU4BCGNVD" target="_blank" class="cert-btn">View Certificate</a>
-                </div>
-
-                <div class="cert-card">
-                    <img src="assets/images/ibm_coursera.png" alt="OS Certificate">
-                    <h3>Introduction to Hardware and Operating Systems</h3>
-                    <p>Coursera</p>
-                    <a href="https://coursera.org/share/e52d413c92ee61c8f6245b1b902031e5" target="_blank" class="cert-btn">View Certificate</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
     <!-- Stats Section -->
     <section id="stats" class="section">
         <div class="container">
@@ -223,73 +293,7 @@
         </div>
     </section>
 
-    <section id="skills" class="section">
-    <div class="container">
-        <h2 class="section-title"><span class="accent">Skills</span></h2>
 
-        <!-- Technical Skills -->
-        <h3 class="skills-subtitle">Technical Skills</h3>
-        <div class="skills-grid">
-
-            <div class="skill-category">
-                <h4>Backend</h4>
-                <div class="skill-tags">
-                    <span>Java</span>
-                    <span>REST APIs</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h4>Frontend</h4>
-                <div class="skill-tags">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                    <span>React</span>
-                    <span>Tailwind</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h4>Database & Tools</h4>
-                <div class="skill-tags">
-                    <span>MySQL</span>
-                    <span>MongoDB</span>
-                    <span>Git/GitHub</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h4>Concepts</h4>
-                <div class="skill-tags">
-                    <span>DSA</span>
-                    <span>OOPS</span>
-                    <span>Algorithms</span>
-                    <span>Operating Systems</span>
-                    <span>Computer Networks</span>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Soft Skills -->
-        <h3 class="skills-subtitle" style="margin-top:40px;">Soft Skills</h3>
-        <div class="skills-grid">
-
-            <div class="skill-category">
-                <div class="skill-tags">
-                    <span>Problem Solving</span>
-                    <span>Critical Thinking</span>
-                    <span>Team Collaboration</span>
-                    <span>Adaptability</span>
-                    <span>Time Management</span>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
 
     <section id="contact" class="section">
         <div class="container">
