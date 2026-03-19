@@ -11,7 +11,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </noscript>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -45,11 +48,11 @@
         <div class="hero-content">
 
             <div class="profile-image">
-                <img src="assets/images/test2.jpeg" alt="Md Arif Ekbal Rashid">
+                <!-- <img src="assets/images/image.png" alt="Md Arif Ekbal Rashid"> -->
             </div>
 
             <span class="subtitle">Hello, I'm</span>
-            <h1 class="glitch-text" data-text="Md Arif Ekbal Rashid">Md Arif Ekbal Rashid </h1>
+            <h1 data-text="Md Arif Ekbal Rashid">Md Arif Ekbal Rashid </h1>
             <h2 class="role">Full Stack Developer</h2>
             <p class="description">Building scalable, high-performance applications with modern Python & creative frontend experiences.</p>
             <div class="cta-group">
@@ -201,7 +204,7 @@
                 <div class="cert-card">
                     <img src="assets/images/google_coursera.png" alt="Networking Certificate">
                     <h3>The Bits and Bytes of Computer Networking</h3>
-                    <p>Google</p>
+                    <p>Coursera</p>
                     <a href="https://www.coursera.org/account/accomplishments/certificate/OFYBU4BCGNVD" target="_blank" class="cert-btn">View Certificate</a>
                 </div>
 
@@ -300,10 +303,12 @@
             <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>arifekbalrashid786@gmail.com</p>
-                    </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arifekbalrashid786@gmail.com" target="_blank">
+                        arifekbalrashid786@gmail.com
+                    </a>
+                </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <p><a href="https://linkedin.com/in/mdarifekbalrashid" target="_blank">linkedin.com/in/mdarifekbalrashid</a></p>
@@ -338,8 +343,8 @@
         </div>
     </footer>
 
-    <script src="js/projects.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/stats.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/projects.js" defer></script>
+    <script src="js/stats.js" defer></script>
 </body>
 </html>

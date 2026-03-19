@@ -704,7 +704,26 @@ h3 {
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
+    gap: 14px;
+    padding: 18px 20px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: all 0.3s ease;
+}
+.contact-item:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.contact-item a {
+    color: var(--text-primary); 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--accent-color); 
 }
 
 .contact-item i {
@@ -914,8 +933,8 @@ h3 {
 }
 
 .calendar-day {
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     border-radius: 2px;
     background-color: #161b22;
     /* Empty day color */

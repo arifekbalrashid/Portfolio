@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const leetcodeUsername = "arif18";
 
 
-
     // --- GitHub Stats ---
     async function fetchGitHubStats() {
         try {
@@ -17,7 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // 2. Contribution Graph
             const chartUrl = `https://ghchart.rshah.org/00f3ff/${githubUsername}?t=${new Date().getTime()}`;
-            // 3. Streak Stats (using github-readme-streak-stats)
+            
+            // 3. Streak Stats
             const streakUrl = `https://github-readme-streak-stats.herokuapp.com/?user=${githubUsername}&theme=dark&hide_border=true&background=111111&ring=00f3ff&currStreakLabel=00f3ff&t=${new Date().getTime()}`;
 
             githubCard.innerHTML = `
