@@ -14,6 +14,12 @@ const seedProjects = require('./scripts/seedProjects');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const compression = require('compression');
+app.use(compression());
+app.use(express.static(path.join(__dirname, 'public'), {
+    maxAge: '7d'
+}));
+
 // Middleware
 app.use(
     helmet({
@@ -65,11 +71,14 @@ app.get(/(.*)/, (req, res) => {
 (async () => {
     try {
         console.log('Running database setup and seeding...');
-        await setupDatabase();
-        await createAdmin();
-        await seedProfile();
-        await seedSkills();
-        await seedProjects();
+        if (process.env.NODE_ENV !== "production") {
+            console.log('Running database setup...');
+            await setupDatabase();
+            await createAdmin();
+            await seedProfile();
+            await seedSkills();
+            await seedProjects();
+        }
         console.log('Database initialized successfully.');
     } catch (error) {
         console.error('Failed to initialize database:', error);
