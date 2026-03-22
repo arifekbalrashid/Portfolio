@@ -128,7 +128,21 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Projects error:', e);
         }
     }
+    const formatUrl = (url) => {
+        if (!url) return "#";
 
+        url = url.trim();
+
+        // remove accidental leading slash
+        if (url.startsWith("/")) url = url.slice(1);
+
+        // add https if missing
+        if (!url.startsWith("http")) {
+            url = "https://" + url;
+        }
+
+        return url;
+    };
     function renderProjects(projects) {
         projectsContainer.innerHTML = '';
 
@@ -156,13 +170,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="project-desc">${project.description}</p>
                     <div class="project-tech">${stackHtml}</div>
                     <div class="project-links">
-                        <a href="${project.github_link || project.github}" target="_blank">
+                        <a href="${formatUrl(project.github_link || project.github)}" 
+                        target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
                         </a>
+
                         ${(project.live_link && project.live_link !== '#')
-                            ? `<a href="${project.live_link}" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                              </a>`
+                            ? `<a href="${formatUrl(project.live_link)}" 
+                                target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                            </a>`
                             : ''}
                     </div>
                 </div>
@@ -179,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // =========================
-    // 5. TRACK VISIT (OPTIMIZED)
+    // 5. TRACK VISIT 
     // =========================
     function trackVisit() {
         try {
