@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (profile.role) document.querySelector('.role').textContent = profile.role;
             if (profile.bio) document.querySelector('.hero-content .description').textContent = profile.bio;
 
-            const linkedinLinks = document.querySelectorAll('a[href*="linkedin.com"]');
-            const githubLinks = document.querySelectorAll('a[href*="github.com"]');
-            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+            const linkedinLinks = document.querySelectorAll('.contact-info a[href*="linkedin.com"], .social-links a[href*="linkedin.com"]');
+            const githubLinks = document.querySelectorAll('.contact-info a[href*="github.com"], .social-links a[href*="github.com"]');
+            const emailLinks = document.querySelectorAll('.contact-info a[href^="mailto:"], .social-links a[href^="mailto:"]');
 
             if (profile.linkedin_link) linkedinLinks.forEach(el => el.href = profile.linkedin_link);
             if (profile.github_link) githubLinks.forEach(el => el.href = profile.github_link);
@@ -143,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         return url;
     };
+
     function renderProjects(projects) {
         projectsContainer.innerHTML = '';
 
@@ -163,24 +164,31 @@ document.addEventListener('DOMContentLoaded', () => {
             const stackHtml = Array.isArray(stack)
                 ? stack.map(tech => `<span>${tech}</span>`).join('')
                 : '';
-
+            const githubUrl = project.github_link;
+            const liveUrl = project.live_link;
             card.innerHTML = `
                 <div class="project-content">
                     <h3 class="project-title">${project.title}</h3>
                     <p class="project-desc">${project.description}</p>
                     <div class="project-tech">${stackHtml}</div>
                     <div class="project-links">
-                        <a href="${formatUrl(project.github_link || project.github)}" 
-                        target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a>
 
-                        ${(project.live_link && project.live_link !== '#')
-                            ? `<a href="${formatUrl(project.live_link)}" 
-                                target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                            </a>`
-                            : ''}
+                        ${githubUrl ? `
+                            <a href="${formatUrl(githubUrl)}" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        ` : ''}
+
+                        ${liveUrl && liveUrl !== '#' ? `
+                            <a href="${formatUrl(liveUrl)}" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        ` : ''}
+
                     </div>
                 </div>
             `;
