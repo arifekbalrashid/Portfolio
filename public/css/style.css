@@ -933,8 +933,8 @@ h3 {
 }
 
 .calendar-day {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border-radius: 2px;
     background-color: #161b22;
     /* Empty day color */

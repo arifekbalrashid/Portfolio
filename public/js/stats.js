@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Generate last 365 days
             const today = new Date();
             const oneYearAgo = new Date();
-            oneYearAgo.setDate(today.getDate() - 365);
+            oneYearAgo.setDate(today.getDate() - 200);
 
             let currentWeek = document.createElement('div');
             currentWeek.className = 'calendar-week';
